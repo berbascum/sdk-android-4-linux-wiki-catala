@@ -2,13 +2,17 @@
 Una altra wiki no oficial de l'SDK d'Android en entorn Linux, en Català.
 
 
-## Instal·lació SDK a Linux Debian Bookworm
+## Instal·lació SDK mínim sense Android Studio a Linux Debian Bookworm
+- S'instal·larà la versió mínima per a utilitzar l'SDK des de línia de comandas.
+- Per a utilitzar l'SDK amb GUI des de l'entorn gràfic de Linux, caldria instal·lar l'SDK amb Android Studio, situació que no es contempla en aquest apartat.
 - Descarregar l'SDK
   > wget https://dl.google.com/android/repository/commandlinetools-linux-7302050_latest.zip
 - Descomprimir-lo.
 - Configurar el PATH
   > echo 'export PATH="$HOME/android-sdk/cmdline-tools/bin:$PATH"' >> ~/.bashrc
+  
   > source ~/.bashrc
+  > 
 - Descàrrega de diferents versions d'api
   > sdkmanager "platforms;android-31" "build-tools;31.0.0"
   
