@@ -7,24 +7,24 @@ Una altra wiki no oficial de l'SDK d'Android en entorn Linux, en Català.
 - Per a utilitzar l'SDK amb GUI des de l'entorn gràfic de Linux, caldria instal·lar l'SDK amb Android Studio, situació que no es contempla en aquest apartat.
 - Descarregar l'última versió l'SDK amb només les "command-line tools" del lloc web oficial:
   > https://developer.android.com/studio#get-android-studio
-  ```{.scrollable}
+  ```bash
   mkdir sdk-android && cd sdk_android
   wget https://dl.google.com/android/repository/commandlinetools-linux-9477386_latest.zip
   ```
 - Descomprimir-lo i preparar l'estructura de dirs:
-  ```{.scrollable}
+  ```bash
   unzip commandlinetools-linux-<version>_latest.zip
   mv cmdline-tools latest && mkdir cmdline-tools
   mv latest cmdline-tools
   ```
 - Configurar el PATH
-  ```{.scrollable}
+  ```bash
   echo 'export PATH="$HOME/android-sdk/cmdline-tools/bin:$PATH"' >> ~/.bashrc
   source ~/.bashrc
   ```
 
 - Descàrrega de diferents versions d'api
-  ```{.scrollable}
+  ```bash
   sdkmanager "platforms;android-31" "build-tools;31.0.0"
   sdkmanager "platforms;android-30" "build-tools;30.0.3"
   sdkmanager "platforms;android-29" "build-tools;29.0.3"
